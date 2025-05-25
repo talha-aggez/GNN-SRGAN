@@ -1,23 +1,26 @@
 # GNN-SRGAN
-General Neural Network - Final Project
 
-This study consists of two models based on Deep-Learning: SRGAN and ESRGAN
+### Generative Neural Networks – Final Project
 
-Enchanced Model 
+This project explores two deep learning-based models for image super-resolution:
 
-Enhanced_SRGAN.ipynb
+- **SRGAN** (Super-Resolution Generative Adversarial Network)  
+- **ESRGAN** (Enhanced SRGAN)
 
-Base Line Model 
+---
 
-SRGAN.ipynb
+## 🔧 Models
 
-Dataset
+- **Baseline Model:** `SRGAN.ipynb`  
+- **Enhanced Model:** `Enhanced_SRGAN.ipynb`
 
-- This project uses the Div2K dataset (https://data.vision.ee.ethz.ch/cvl/DIV2K/)
+---
 
-Dataset structure:
+## 📂 Dataset
 
-/content/data/data/DIV2K_train_HR/
+This project uses the [DIV2K dataset](https://data.vision.ee.ethz.ch/cvl/DIV2K/) for training and validation.
+
+### Dataset Directory Structure:
 
 content/
 │── data/
@@ -25,11 +28,16 @@ content/
 │   │  ├── DIV2K_train_HR/ (training set)
 │   │  ├── DIV2K_valid_HR/ (validation set)
 
-Place your dataset inside the content/ directory before running the training script.
+> 📌 **Note:** Place your dataset inside the `content/` directory before running the training notebooks.
 
-Usage:
+---
 
-Benchmark test:
+## 🚀 Usage
+
+### 📊 Benchmark Testing
+
+To evaluate the models using a standard test set, organize your benchmark data as follows:
+
 
 
 content/
@@ -40,15 +48,22 @@ content/
 │   │   │  ├── data/ (LR images)
 │   │   │  ├── target/ (HR images)
 
-GNN-SRGAN/content/data/test
-/Dataset/
+### Benchmark Notebooks:
 
-ESRGAN_benchmark.ipynb
-SRGAN_benchmark.ipynb
+- `SRGAN_benchmark.ipynb`
+- `ESRGAN_benchmark.ipynb`
 
-content/
-│── data/
-│   ├── data/
-│   │  ├── DIV2K_train_HR/ (training set)
-│   │  ├── DIV2K_valid_HR/ (validation set)
+These notebooks demonstrate example evaluation results on the benchmark dataset.
+
+---
+
+## 📈 Example Results
+
+Example output images and PSNR/SSIM scores are provided in the benchmark notebooks for comparison.
+
+---
+
+## 📝 License
+
+This project is for academic purposes only.
 
